@@ -1,0 +1,210 @@
+@import url('https://fonts.googleapis.com/css2?family=Stack+Sans+Text:wght@200..700&display=swap');
+
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0px 10px;
+}
+
+header{
+    /* background-color: rgb(209, 209, 209); */
+    background-image: url("../images/head-banner.webp");
+    background-position: top;
+    background-size: cover;
+    align-content: center;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.d-ib{
+    display: inline-block;
+}
+
+.content{
+    width: 50%;
+    /* height: 100%; */
+    align-items: center;
+}
+
+.about{
+    font-family: "Stack Sans Text", sans-serif;
+}
+
+.about a{
+    display: block;
+    text-decoration: none;
+    font-weight: 600;
+    color: black;
+    font-size: 17px;
+}
+
+.slogan{
+    font-size: 13px;
+    color: gray;
+}
+
+.search-box{
+    background-color: white;
+    /* width: 100%; */
+    padding: 10px;
+    margin: 3px 0px;
+    border: 2px solid rgb(155, 155, 155);
+    border-radius: 10px;
+    width: fit-content;
+}
+
+.search-box input{
+    width: 230px;
+    border: none;
+    color: gray;
+    font-weight: 400;
+    font-family: "Stack Sans Text", sans-serif;
+    background-color: none;
+}
+
+.search-box i{
+    color: gray;
+    float: right;
+}
+
+.topbar{
+    width: 100%;
+    margin-top: 10px;
+    font-family: "Stack Sans Text", sans-serif;
+}
+
+.num-pro .boldnum{
+    font-weight: 700;
+}
+
+.num-pro .gr-font{
+    color: gray;
+    margin-left: 5px;
+}
+
+.filter{
+    float: right;
+}
+
+.num-filter{
+    border: 1.8px solid gray;
+    border-radius: 5px;
+    padding: 3px;
+}
+
+.num-filter input{
+    background-color: none;
+    border: none;
+}
+
+.sorting-filter{
+    border: 1.8px solid gray;
+    border-radius: 5px;
+    padding: 3px 10px;
+    
+}
+
+.sorting-filter .pre-text{
+    font-size: 12px;
+    font-weight: 600;
+    color: rgb(81, 81, 81);
+}
+
+.sorting-filter select{
+    border: none;
+    width: 100px;
+    font-weight: 600;
+    color: rgb(81, 81, 81);
+}
+
+.item-section{
+    width: fit-content;
+    margin: 30px auto;
+    /* display: flex; */
+    justify-content: center;
+}
+
+.pro-box{
+    width: 300px;
+    height: 400px;
+    margin-inline: 30px;
+    padding: 20px;
+    border: 3px solid gray;
+    border-radius: 10px;
+    position: relative;
+    font-family: "Stack Sans Text", sans-serif;
+}
+
+.img-box{
+    height: 70%;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.d-fl{
+    position: absolute;
+    font-size: 13px;
+    border-radius: 5px;
+    left: 0%;
+    color: white;
+    padding: 3px 6px;
+}
+
+.red-box{
+    background-color: red;
+    top: 0%;
+}
+
+.green-box{
+    top: 13%;
+    background-color: green;
+}
+
+.img-box img{
+    width: 200px;
+    height: 200px; 
+}
+
+.pro-category{
+    color: gray;
+    font-size: 13px;
+}
+
+.pro-name{
+    font-weight: 600;
+}
+
+.rating i{
+    color: rgb(248, 215, 26);
+    font-size: 20px;
+}
+
+.rating .rate-in-num{
+    font-size: 13px;
+    color: gray;
+}
+
+.price-add .ori-price{
+    font-weight: 500;
+}
+
+.dis-price{
+    color: gray;
+    font-size: 13px;
+    text-decoration: line-through;
+    margin-left: 5px;
+}
+
+.add-btn{
+    float: right;
+    padding: 10px 20px;
+    color: white;
+    font-weight: 700;
+    background-color: green;
+    border: none;
+    border-radius: 5px;
+}
