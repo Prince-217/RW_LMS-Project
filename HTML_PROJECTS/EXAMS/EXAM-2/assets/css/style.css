@@ -1,0 +1,367 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+*,
+*::before,
+*::after{
+    box-sizing: border-box;
+    margin: 0;
+}
+
+/* header part */
+
+
+header{
+    width: 100%;    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.211);
+    position: fixed;
+    border-bottom: 1px solid white;
+}
+
+.logo{
+    width: 100px;
+    height: 100px;
+}
+
+.logo img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.menu{
+    width: 600px;
+}
+
+nav ul{
+    display: flex;
+    justify-content: space-between;
+}
+
+a{
+    text-decoration: none;
+}
+
+ul li{
+    list-style: none;
+    margin-inline: 12px;
+    font-family: "Open Sans", sans-serif;
+}
+
+ul li a{
+    color: white;
+}
+
+.right-prt{
+    padding: 12px;
+}
+
+.right-prt a{
+    color: white;
+    font-size: 20px;
+}
+
+.right-prt button{
+    background-color: rgb(244, 213, 40);
+    border: none;
+    padding: 12px 24px;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 600;
+    margin-inline: 5px;
+}
+
+
+/* hero-section */
+
+.hero-sec{
+    height: 600px;
+    width: 100%;
+    /* background-color: brown; */
+    background-image: url('../images/hero-img.jpeg');
+    background-size: cover;
+}
+
+.container{
+    height: 100%;
+    width: 100%;
+    /* justify-content: center; */
+    /* display: flex; */
+    /* align-items: center; */
+    background-image: url('../images/hero-img.jpeg');
+}
+
+.hero-sec .container .overlay{
+    height: 100%;
+    padding: 30px;
+    margin: auto 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.399);
+}
+
+.overlay .btns{
+    height: 120px;
+    width: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.btns button{
+    height: 50px;
+    width: 50px;
+    font-size: 22px;
+    font-weight: 700;
+    color: rgb(244, 213, 40);
+    background-color: rgb(255, 255, 255);
+    border: none;
+    border-radius: 5px;
+}
+
+.txt-area{
+    height: 200px;
+    width: 800px;
+    h1{
+        font-family: "Open Sans", sans-serif;
+        font-size: 60px;
+        text-align: right;
+        color: white;
+    }
+    
+    .hro-btns{
+        margin: 20px 0;
+        text-align: right;
+    }
+
+    .hro-btns button{
+        height: 40px;
+        width: 120px;
+        border: none;
+        font-family: "Open Sans", sans-serif;
+        font-size: 12px;
+        font-weight: 700;
+        margin-inline: 12px;    
+    }
+
+    .hro-btns button:nth-child(1){
+        background-color: rgb(244, 213, 40);
+        color: white;
+    }
+    
+    .hro-btns button:nth-child(2){
+        color: rgb(244, 213, 40);
+        background-color: white;
+    }
+    
+}
+
+
+/* About Us Section */
+
+.abt-us{
+    margin: 20px 0;
+    height: 500px;
+    font-family: "Open Sans", sans-serif;
+    width: 100%;
+    /* background-color: blanchedalmond; */
+    display: flex;
+    justify-content: center;
+}
+
+.abt-us > div{
+    margin-inline: 12px;
+}
+
+.glry-prt{
+    width: 500px;
+    height: 100%;
+    /* background-color: aquamarine; */
+    position: relative;
+
+}
+
+.glry-prt .imgs{
+    position: absolute;
+    overflow: hidden;
+}
+
+.imgs img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: top;
+}
+
+
+
+.im1{
+    height: 220px;
+    width: 170px;
+    border-radius: 18px;
+    inset: 0 auto 0 250px;
+}
+.im2{
+    height: 200px;
+    width: 140px;
+    border-radius: 18px;
+    inset: auto auto 20px 30px;
+}
+.im3{
+    height: 170px;
+    width: 170px;
+    border-radius: 18px;
+    inset: 12px auto auto 100px;
+}   
+.im4{
+    height: 230px;
+    width: 170px;
+    border-radius: 18px;
+    inset: 12px 0 20px 0;
+    margin: auto;
+}
+
+
+.abt-info{
+    width: 450px;
+    height: 100%;
+}
+
+.hd{
+    width: fit-content;
+    padding-bottom: 12px;
+    border-bottom: 3px solid gray;
+}
+
+.abt-info .hd h4{
+    color: rgb(244, 213, 40);
+}
+
+.abt-info h1{
+    font-weight: 700;
+    margin: 10px 0;
+}
+
+.abt-info p{
+    margin: 20px 0;
+}
+
+.exp-por{
+    display: flex;
+    align-items: center;
+}
+
+.yrs-exp{
+    text-align: center;
+    padding: 8px;
+    border-right: 2px solid gray;
+    h1{
+        font-size: 65px;
+        color: rgb(244, 213, 40);
+    }
+    span{
+        font-size: 13px;
+        color: gray;
+    }
+}
+
+.facil{
+    align-content: center;
+    margin-left: 15px;
+}
+
+.facil ul{
+    padding: 0;
+}
+
+.facil ul li i{
+    color: rgb(244, 213, 40);
+    margin-right: 12px;
+}
+
+.facil button{
+    background-color: rgb(244,213, 40);
+    padding: 8px 16px;
+    border: none;
+    margin-top: 15px;
+}
+
+
+:root {
+    --pink-color: #ff3366;
+    --dark-bg: #121b22;
+    --card-dark: #4d555a;
+    --text-dark: #222222;
+    --text-muted: #666666;
+    --light-bg: #f9fbfd;
+}
+
+.service-section .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* --- Shared Section Headings --- */
+
+
+.services-section, .pricing-section {
+    padding: 80px 0;
+    text-align: center;
+}
+
+.services-section { background-color: var(--light-bg); }
+    
+.section-title {
+    font-size: 36px;
+    font-weight: 700;
+    margin-top: 15px;
+    margin-bottom: 50px;
+}
+
+/* --- Services Grid --- */
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 25px;
+}
+
+.service-card {
+    background: #ffffff;
+    padding: 40px 30px;
+    border-radius: 4px;
+    text-align: left;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.03);
+    transition: transform 0.3s ease;
+}
+
+.service-card:hover {
+    transform: translateY(-5px);
+}
+
+.service-card .icon-box {
+    color: var(--pink-color);
+    font-size: 35px;
+    margin-bottom: 20px;
+}
+
+.service-card h3 {
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+.service-card p {
+    color: var(--text-muted);
+    font-size: 14px;
+    line-height: 1.6;
+    margin-bottom: 25px;
+}
+
+.service-card .read-more {
+    color: var(--text-dark);
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: 500;
+}
