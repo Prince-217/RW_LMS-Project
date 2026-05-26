@@ -75,4 +75,4 @@ https://drive.google.com/file/d/1Iy4L0zUGf2fBwf7i67Bxw0fmcT8a3BwB/view?usp=shari
 
 # Project preview :-
 
-<img src="PR-4_Min-Width/assets/preview.png" height="600">
+<img src="/assets/preview.png" height="600">
