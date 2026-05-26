@@ -1,0 +1,27 @@
+@media (min-width: 768px) {
+    header {
+        .menu ul {
+            display: flex;
+        }
+
+        .menu .men-btn {
+            display: none;
+        }
+    }
+
+    .hero-sec {
+        height: 400px;
+    }
+
+    .categories-2 {
+
+        .ms-catgs {
+            grid-template-columns: repeat(3, 1fr);
+        }
+
+        .mlk{
+            /* height: 60vh; */
+            width: 20vw;
+        }
+    }
+}
