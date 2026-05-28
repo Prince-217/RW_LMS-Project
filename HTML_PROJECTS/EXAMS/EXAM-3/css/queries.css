@@ -1,0 +1,77 @@
+@media (max-width: 1024px) {
+
+    header .nav-bar {
+        width: 900px;
+
+        nav {
+            padding: 10px 5px;
+        }
+
+        .logo a {
+            font-size: large;
+        }
+
+    }
+
+    .container {
+        padding: 80px 40px;
+    }
+
+    .shoes-grid {
+        gap: 50px;
+
+        .section-title {
+            font-size: 2.25rem;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+
+    header .nav-bar {
+
+        width: 720px;
+
+        nav .nav-links ul {
+            display: none;
+        }
+
+        nav .nvl-btn {
+            display: block;
+        }
+
+        .user-menu .abt-mn>ul {
+            display: none;
+        }
+
+        .user-menu .abt-mn>.abt-mnbt {
+            display: block;
+            margin-right: 40px;
+        }
+    }
+
+    .categories {
+        .categ-cont {
+            .cat-cont .cat-links {
+                display: none;
+            }
+
+            .cat-btn {
+                display: block;
+            }
+        }
+    }
+
+    .shoes-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .nav-arrow {
+        display: block;
+
+        .footer-container {
+            flex-direction: row;
+            justify-content: space-between;
+        }
+    }
+}
