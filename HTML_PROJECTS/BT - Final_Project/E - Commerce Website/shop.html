@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Shop · GreenCrate</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  <link rel="stylesheet" href="./css/styles.css" />
+</head>
+<body>
+
+  <!-- Utility bar -->
+  <div class="utility-bar">
+    <div class="container d-flex justify-content-between flex-wrap">
+      <div><i class="fa-solid fa-truck me-2"></i> Free delivery on orders over $40</div>
+      <div class="d-none d-md-block">
+        <a href="contact.html" class="me-3"><i class="fa-solid fa-phone me-1"></i> +1 (555) 010‑2920</a>
+        <a href="#"><i class="fa-solid fa-location-dot me-1"></i> Store Locator</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-custom">
+    <div class="container">
+      <a class="navbar-brand" href="index.html"><span class="leaf"><i class="fa-solid fa-leaf"></i></span>GreenCrate</a>
+      <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#mainNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="mainNav">
+        <ul class="navbar-nav mx-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link active" href="shop.html">Shop</a></li>
+          <li class="nav-item"><a class="nav-link" href="cart.html">Cart</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+        </ul>
+        <div class="d-flex align-items-center">
+          <a href="#" class="icon-btn"><i class="fa-solid fa-magnifying-glass"></i></a>
+          <a href="#" class="icon-btn"><i class="fa-regular fa-heart"></i></a>
+          <a href="cart.html" class="icon-btn">
+            <i class="fa-solid fa-bag-shopping"></i>
+            <span class="badge-count">3</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Page header -->
+  <section class="page-header">
+    <div class="container">
+      <div class="breadcrumbs mb-3"><a href="index.html">Home</a> · <span class="current">Shop</span></div>
+      <h1>The <em>shop</em> floor.</h1>
+      <p class="text-muted mt-2 mb-0">Browse 348 fresh items across 12 hand‑picked categories.</p>
+    </div>
+  </section>
+
+  <!-- Shop body -->
+  <section class="section">
+    <div class="container">
+      <div class="row g-4">
+        <!-- Filter Sidebar -->
+        <aside class="col-lg-3">
+          <div class="filter-sidebar">
+            <div class="filter-group">
+              <h6>Categories</h6>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="cat1" checked />
+                <label class="form-check-label" for="cat1">Vegetables <span class="count">(86)</span></label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="cat2" />
+                <label class="form-check-label" for="cat2">Fruits <span class="count">(54)</span></label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="cat3" checked />
+                <label class="form-check-label" for="cat3">Dairy <span class="count">(32)</span></label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="cat4" />
+                <label class="form-check-label" for="cat4">Bakery <span class="count">(28)</span></label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="cat5" />
+                <label class="form-check-label" for="cat5">Beverages <span class="count">(41)</span></label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="cat6" />
+                <label class="form-check-label" for="cat6">Pantry <span class="count">(67)</span></label>
+              </div>
+            </div>
+
+            <div class="filter-group">
+              <h6>Price Range</h6>
+              <input type="range" class="form-range" min="0" max="50" />
+              <div class="d-flex justify-content-between" style="font-size: 13px; color: var(--muted);">
+                <span>$0</span><span>$50</span>
+              </div>
+            </div>
+
+            <div class="filter-group">
+              <h6>Diet</h6>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="d1" checked />
+                <label class="form-check-label" for="d1">Organic</label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="d2" />
+                <label class="form-check-label" for="d2">Gluten‑free</label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="d3" />
+                <label class="form-check-label" for="d3">Vegan</label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="d4" />
+                <label class="form-check-label" for="d4">Sugar‑free</label>
+              </div>
+            </div>
+
+            <div class="filter-group">
+              <h6>Brand</h6>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="b1" />
+                <label class="form-check-label" for="b1">Hilltop Farm</label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="b2" />
+                <label class="form-check-label" for="b2">Maple Creek</label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="b3" />
+                <label class="form-check-label" for="b3">Orchard Lane</label>
+              </div>
+            </div>
+
+            <button class="btn-forest w-100 justify-content-center">Apply Filters</button>
+          </div>
+        </aside>
+
+        <!-- Products -->
+        <div class="col-lg-9">
+          <div class="shop-toolbar">
+            <div class="result-count">Showing <strong style="color: var(--forest);">1 – 9</strong> of 348 products</div>
+            <div class="d-flex align-items-center gap-2">
+              <span style="font-size: 13px; color: var(--muted);">Sort by:</span>
+              <select class="sort-select">
+                <option>Featured</option>
+                <option>Price: low to high</option>
+                <option>Price: high to low</option>
+                <option>Newest arrivals</option>
+                <option>Best rated</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="row g-4">
+            <div class="col-md-4 col-sm-6">
+              <div class="product-card">
+                <div class="img-wrap">
+                  <span class="tag">New</span>
+                  <button class="wishlist-btn"><i class="fa-regular fa-heart"></i></button>
+                  <img src="https://cdn-icons-png.flaticon.com/512/590/590685.png" alt=""/>
+                </div>
+                <div class="body">
+                  <div class="cat-label">Vegetables</div>
+                  <h6>Organic Hass Avocado</h6>
+                  <div class="rating">★★★★★ <span>(48)</span></div>
+                  <div class="price-row">
+                    <div class="price">$3.49</div>
+                    <button class="add-btn"><i class="fa-solid fa-plus"></i></button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-4 col-sm-6">
+              <div class="product-card">
+                <div class="img-wrap">
+                  <span class="tag sale">‑20%</span>
+                  <button class="wishlist-btn"><i class="fa-regular fa-heart"></i></button>
+                  <img src="https://cdn-icons-png.flaticon.com/512/415/415682.png" alt=""/>
+                </div>
+                <div class="body">
+                  <div class="cat-label">Fruits</div>
+                  <h6>Crimson Honeycrisp Apple</h6>
+                  <div class="rating">★★★★★ <span>(124)</span></div>
+                  <div class="price-row">
+                    <div class="price">$4.20 <span class="old">$5.25</span></div>
+                    <button class="add-btn"><i class="fa-solid fa-plus"></i></button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-4 col-sm-6">
+              <div class="product-card">
+                <div class="img-wrap">
+                  <button class="wishlist-btn"><i class="fa-regular fa-heart"></i></button>
+                  <img src="https://cdn-icons-png.flaticon.com/512/3082/3082021.png" alt=""/>
+                </div>
+                <div class="body">
+                  <div class="cat-label">Bakery</div>
+                  <h6>Stone‑baked Sourdough</h6>
+                  <div class="rating">★★★★☆ <span>(67)</span></div>
+                  <div class="price-row">
+                    <div class="price">$6.80</div>
+                    <button class="add-btn"><i class="fa-solid fa-plus"></i></button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-4 col-sm-6">
+              <div class="product-card">
+                <div class="img-wrap">
+                  <span class="tag">Bestseller</span>
+                  <button class="wishlist-btn"><i class="fa-regular fa-heart"></i></button>
+                  <img src="https://cdn-icons-png.flaticon.com/512/2674/2674568.png" alt=""/>
+                </div>
+                <div class="body">
+                  <div class="cat-label">Dairy</div>
+                  <h6>Grass‑fed Whole Milk · 1L</h6>
+                  <div class="rating">★★★★★ <span>(212)</span></div>
+                  <div class="price-row">
+                    <div class="price">$2.95</div>
+                    <button class="add-btn"><i class="fa-solid fa-plus"></i></button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-4 col-sm-6">
+              <div class="product-card">
+                <div class="img-wrap">
+                  <button class="wishlist-btn"><i class="fa-regular fa-heart"></i></button>
+                  <img src="https://cdn-icons-png.flaticon.com/512/590/590685.png" alt="" style="filter: hue-rotate(10deg);"/>
+                </div>
+                <div class="body">
+                  <div class="cat-label">Vegetables</div>
+                  <h6>Baby Spinach · 200g</h6>
+                  <div class="rating">★★★★★ <span>(38)</span></div>
+                  <div class="price-row">
+                    <div class="price">$2.10</div>
+                    <button class="add-btn"><i class="fa-solid fa-plus"></i></button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-4 col-sm-6">
+              <div class="product-card">
+                <div class="img-wrap">
+                  <span class="tag sale">‑15%</span>
+                  <button class="wishlist-btn"><i class="fa-regular fa-heart"></i></button>
+                  <img src="https://cdn-icons-png.flaticon.com/512/4727/4727424.png" alt=""/>
+                </div>
+                <div class="body">
+                  <div class="cat-label">Beverages</div>
+                  <h6>Cold‑pressed Orange Juice</h6>
+                  <div class="rating">★★★★☆ <span>(91)</span></div>
+                  <div class="price-row">
+                    <div class="price">$5.95 <span class="old">$6.99</span></div>
+                    <button class="add-btn"><i class="fa-solid fa-plus"></i></button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-4 col-sm-6">
+              <div class="product-card">
+                <div class="img-wrap">
+                  <span class="tag">New</span>
+                  <button class="wishlist-btn"><i class="fa-regular fa-heart"></i></button>
+                  <img src="https://cdn-icons-png.flaticon.com/512/2515/2515183.png" alt=""/>
+                </div>
+                <div class="body">
+                  <div class="cat-label">Pantry</div>
+                  <h6>Raw Wildflower Honey · 350g</h6>
+                  <div class="rating">★★★★★ <span>(56)</span></div>
+                  <div class="price-row">
+                    <div class="price">$9.40</div>
+                    <button class="add-btn"><i class="fa-solid fa-plus"></i></button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-4 col-sm-6">
+              <div class="product-card">
+                <div class="img-wrap">
+                  <button class="wishlist-btn"><i class="fa-regular fa-heart"></i></button>
+                  <img src="https://cdn-icons-png.flaticon.com/512/2674/2674568.png" alt="" style="filter: sepia(.3);"/>
+                </div>
+                <div class="body">
+                  <div class="cat-label">Dairy</div>
+                  <h6>Aged Sharp Cheddar · 250g</h6>
+                  <div class="rating">★★★★★ <span>(143)</span></div>
+                  <div class="price-row">
+                    <div class="price">$7.50</div>
+                    <button class="add-btn"><i class="fa-solid fa-plus"></i></button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-4 col-sm-6">
+              <div class="product-card">
+                <div class="img-wrap">
+                  <span class="tag sale">‑10%</span>
+                  <button class="wishlist-btn"><i class="fa-regular fa-heart"></i></button>
+                  <img src="https://cdn-icons-png.flaticon.com/512/415/415733.png" alt=""/>
+                </div>
+                <div class="body">
+                  <div class="cat-label">Vegetables</div>
+                  <h6>Roma Tomato · 500g</h6>
+                  <div class="rating">★★★★★ <span>(77)</span></div>
+                  <div class="price-row">
+                    <div class="price">$3.15 <span class="old">$3.50</span></div>
+                    <button class="add-btn"><i class="fa-solid fa-plus"></i></button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Pagination -->
+          <div class="pagination-wrap">
+            <a href="#"><i class="fa-solid fa-chevron-left"></i></a>
+            <a href="#" class="active">1</a>
+            <a href="#">2</a>
+            <a href="#">3</a>
+            <a href="#">4</a>
+            <a href="#"><i class="fa-solid fa-chevron-right"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Newsletter -->
+  <section class="newsletter">
+    <div class="container">
+      <div class="row align-items-center g-4">
+        <div class="col-lg-6">
+          <span class="section-eyebrow" style="color: var(--terracotta);">Newsletter</span>
+          <h2 class="section-title">Recipes & <em>weekly</em> drops, in your inbox.</h2>
+        </div>
+        <div class="col-lg-6">
+          <form class="nl-form">
+            <input type="email" placeholder="Your email address" />
+            <button type="button">Subscribe</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="row g-5">
+        <div class="col-lg-4">
+          <div class="brand"><i class="fa-solid fa-leaf me-1"></i> GreenCrate</div>
+          <p class="mt-3">A modern grocery for thoughtful eaters. Sourced from neighbourhood farms, delivered with care across the region.</p>
+          <div class="social-row">
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#"><i class="fa-brands fa-tiktok"></i></a>
+            <a href="#"><i class="fa-brands fa-pinterest-p"></i></a>
+          </div>
+        </div>
+        <div class="col-lg-2 col-md-4 col-6">
+          <h6>Shop</h6>
+          <ul>
+            <li><a href="shop.html">Vegetables</a></li>
+            <li><a href="shop.html">Fruits</a></li>
+            <li><a href="shop.html">Dairy</a></li>
+            <li><a href="shop.html">Bakery</a></li>
+            <li><a href="shop.html">Pantry</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-2 col-md-4 col-6">
+          <h6>Company</h6>
+          <ul>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Our farms</a></li>
+            <li><a href="#">Careers</a></li>
+            <li><a href="#">Sustainability</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-4 col-md-4">
+          <h6>Get in touch</h6>
+          <ul>
+            <li><i class="fa-solid fa-location-dot me-2"></i> 224 Harvest Lane, Portland, OR</li>
+            <li><i class="fa-solid fa-phone me-2"></i> +1 (555) 010‑2920</li>
+            <li><i class="fa-solid fa-envelope me-2"></i> hello@greencrate.co</li>
+          </ul>
+        </div>
+      </div>
+      <div class="copy text-center">© 2025 GreenCrate. Crafted with care for hungry humans.</div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
